@@ -57,3 +57,16 @@ classifier.fit_generator(training_set,
                          epochs = 25,
                          validation_data = test_set,
                          validation_steps = 2000)
+
+#MAking prediction for single image
+import numpy as np
+from keras.preprocessing import image
+predict_image=image.load_img('dataset/cat.jpg',target_size=(64,64))
+predict_image=image.img_to_array(predict_image)
+
+#Expecting 4 dimensions in place to 3 dimensions (in batch)
+predict_image=np.expand_dims(predict_image,axis=0)
+result_text=classifier.predict(predict_image)
+training_set.class_indices
+
+
