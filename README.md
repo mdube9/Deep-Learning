@@ -6,7 +6,8 @@ The two files are basics for applying ANN and CNN.The code consists of preproces
 <br><br><b>4. Full Connection </b>(To apply ANN to classify the images)<br>
 <br>
 
-<h1> LSTM model added for sentiment analysi on IMBD dataset with 84% validation and 84% testing accuracies which includes:
+<h3> LSTM model added</h3>
+<br> LSTM model implemented for sentiment analysi on IMBD dataset with 84% validation and 84% testing accuracies which includes:
 <br> 1. Word Embedding
 <br> 2. Apply LSTM
 <br> 3. Fitting and evaluate the model
